@@ -20,7 +20,7 @@ Panels are saved groups of research participants that you build once and reuse a
 
 2. Click **+ Create**. The **Build your panel** dialog opens.
 
-3. Enter a **Panel Name** — be specific so you can identify it at a glance (e.g. "Female Entrepreneurs in Accra", "Kuda Mobile Users").
+3. Enter a **Panel Name** — be specific so you can identify it at a glance (e.g. "Female Entrepreneurs in Accra", "Android Power Users").
 
 4. Choose how you'd like to source your participants:
    - **Recruit new participants** — click **Set screener** to build custom questions that vet your tester pool before they join
