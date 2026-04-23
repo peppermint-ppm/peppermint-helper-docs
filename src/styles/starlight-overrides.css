@@ -1,0 +1,131 @@
+:root {
+  /* Brand tokens (light) */
+  --app-bg: #ffffff;
+  --app-surface: #ffffff;
+  --app-surface-2: #f7f8f9;
+  --app-sidebar-bg: #fdfefe;
+  --app-border: #e3e8ee;
+  --app-border-strong: #d5dbe1;
+  --app-text: #1a1f36;
+  --app-text-muted: #4f566b;
+  --app-text-subtle: #697386;
+  --app-hover: #f7f8f9;
+  --app-hover-alt: #f5f7ff;
+  --app-primary: #625afa;
+  --app-primary-hover: #544cf4;
+  --app-primary-light: #efefff;
+  --app-success-light: #4fc22633;
+  --app-success: #4fc226;
+  --app-warning-light: #f8e5ba;
+  --app-warning: #9c3f0f;
+  --app-danger-light: #ffe5e5;
+  --app-danger: #c53030;
+  --app-overlay: rgba(237, 238, 240, 0.5);
+
+  /* Starlight mapping (light) */
+  --sl-color-black: var(--app-bg);
+  --sl-color-bg: var(--app-bg);
+  --sl-color-bg-nav: var(--app-sidebar-bg);
+  --sl-color-bg-sidebar: var(--app-sidebar-bg);
+  --sl-color-bg-inline-code: var(--app-surface-2);
+  --sl-color-hairline: var(--app-border);
+  --sl-color-hairline-light: var(--app-border);
+  --sl-color-hairline-shade: var(--app-border-strong);
+  --sl-color-accent: var(--app-primary);
+  --sl-color-accent-high: var(--app-primary-hover);
+  --sl-color-accent-low: var(--app-primary-light);
+  --sl-color-text: var(--app-text-muted);
+  --sl-color-text-accent: var(--app-primary);
+  --sl-color-text-invert: #ffffff;
+  --sl-color-white: var(--app-text);
+  --sl-color-green: var(--app-success);
+  --sl-color-green-low: var(--app-success-light);
+  --sl-color-orange: var(--app-warning);
+  --sl-color-orange-low: var(--app-warning-light);
+  --sl-color-red: var(--app-danger);
+  --sl-color-red-low: var(--app-danger-light);
+  --sl-color-backdrop-overlay: var(--app-overlay);
+
+  --sl-text-h1: var(--sl-text-3xl);
+  --sl-text-h2: var(--sl-text-2xl);
+  --sl-text-h3: var(--sl-text-xl);
+  --sl-text-h4: var(--sl-text-lg);
+  --sl-text-h5: var(--sl-text-base);
+  --sl-text-h6: var(--sl-text-sm);
+}
+
+:root[data-theme='dark'] {
+  /* Brand tokens (dark) */
+  --app-bg: #0f1218;
+  --app-surface: #161b24;
+  --app-surface-2: #1b2230;
+  --app-sidebar-bg: #141922;
+  --app-border: #313d4f;
+  --app-border-strong: #3c4b61;
+  --app-text: #eef2fb;
+  --app-text-muted: #c3cbda;
+  --app-text-subtle: #98a4ba;
+  --app-hover: #243043;
+  --app-hover-alt: #29364b;
+  --app-primary: #7a73ff;
+  --app-primary-hover: #8b85ff;
+  --app-primary-light: #141232;
+  --app-success-light: #314728;
+  --app-success: #8cdd6b;
+  --app-warning-light: #4b3620;
+  --app-warning: #f3c272;
+  --app-danger-light: #4d2a2a;
+  --app-danger: #ff8b8b;
+  --app-overlay: rgba(0, 0, 0, 0.5);
+
+  /* Starlight mapping (dark) */
+  --sl-color-black: var(--app-bg);
+  --sl-color-bg: var(--app-bg);
+  --sl-color-bg-nav: var(--app-surface);
+  --sl-color-bg-sidebar: var(--app-sidebar-bg);
+  --sl-color-bg-inline-code: var(--app-surface-2);
+  --sl-color-hairline: var(--app-border);
+  --sl-color-hairline-light: var(--app-border);
+  --sl-color-hairline-shade: var(--app-border-strong);
+  --sl-color-accent: var(--app-primary);
+  --sl-color-accent-high: var(--app-primary-hover);
+  --sl-color-accent-low: var(--app-primary-light);
+  --sl-color-text: var(--app-text-muted);
+  --sl-color-text-accent: var(--app-primary-hover);
+  --sl-color-text-invert: var(--app-text);
+  --sl-color-white: var(--app-text);
+  --sl-color-green: var(--app-success);
+  --sl-color-green-low: var(--app-success-light);
+  --sl-color-orange: var(--app-warning);
+  --sl-color-orange-low: var(--app-warning-light);
+  --sl-color-red: var(--app-danger);
+  --sl-color-red-low: var(--app-danger-light);
+  --sl-color-backdrop-overlay: var(--app-overlay);
+}
+
+@media (min-width: 50em) {
+  :root {
+    --sl-text-h1: var(--sl-text-3xl);
+    --sl-text-h2: var(--sl-text-2xl);
+    --sl-text-h3: var(--sl-text-xl);
+    --sl-text-h4: var(--sl-text-lg);
+    --sl-text-h5: var(--sl-text-base);
+    --sl-text-h6: var(--sl-text-sm);
+  }
+}
+
+.sl-markdown-content {
+  font-size: var(--sl-text-sm);
+}
+
+/* Hide Starlight's synthetic top-of-page TOC item to avoid duplicate "Overview". */
+starlight-toc nav > ul > li:first-child,
+mobile-starlight-toc .dropdown > ul > li:first-child {
+  display: none;
+}
+
+/* Brand logo sizing */
+.site-title img {
+  height: 1.8rem;
+  width: auto;
+}
