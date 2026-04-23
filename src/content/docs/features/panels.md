@@ -14,6 +14,8 @@ Panels are saved groups of research participants that you build once and reuse a
 
 ## How It Works
 
+<div style="margin-top: 1rem;"></div>
+
 ### Creating a Panel
 
 1. Click **Panels** in the left navigation.
