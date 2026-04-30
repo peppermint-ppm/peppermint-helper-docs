@@ -74,7 +74,9 @@
   --app-surface: #161b24;
   --app-surface-2: #1b2230;
   --app-sidebar-bg: #141922;
+  --app-navbar-bg: color-mix(in srgb, var(--app-surface) 50%, transparent);
   --app-border: #313d4f;
+  --app-border-light: #3c4b61;
   --app-border-strong: #3c4b61;
   --app-text: #eef2fb;
   --app-text-muted: #c3cbda;
@@ -94,7 +96,7 @@
   --app-danger-light: #4d2a2a;
   --app-danger: #ff8b8b;
   --app-overlay: rgba(0, 0, 0, 0.5);
-  --app-image-bg: #f6f5ed;
+  --app-image-bg: #161b24;
 
   /* Starlight mapping (dark) */
   --sl-color-black: var(--app-bg);
@@ -174,13 +176,25 @@ mobile-starlight-toc .dropdown > ul > li:first-child {
   border-bottom: 0 !important;
   box-shadow: none !important;
   outline: none !important;
-  background-color: var(--app-surface) !important;
+  background-color: var(--app-bg) !important;
   position: sticky !important;
   top: 0;
   isolation: isolate;
   backdrop-filter: none;
   -webkit-backdrop-filter: none;
   transition: background-color 150ms ease;
+}
+
+.header-wordmark--dark {
+  display: none;
+}
+
+:root[data-theme='dark'] .header-wordmark--light {
+  display: none;
+}
+
+:root[data-theme='dark'] .header-wordmark--dark {
+  display: block;
 }
 
 .page > .header::before {

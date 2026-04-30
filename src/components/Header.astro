@@ -2,6 +2,7 @@
 import config from 'virtual:starlight/user-config';
 import Search from 'virtual:starlight/components/Search';
 import { Moon, Sparkle, SunMedium } from '@lucide/astro';
+import peppermintLogoDark from '../assets/peppermint-logo-dark.svg';
 
 const shouldRenderSearch =
   config.pagefind || config.components.Search !== '@astrojs/starlight/components/Search.astro';
@@ -10,7 +11,8 @@ const shouldRenderSearch =
 <div class="flex h-21 w-full items-center justify-between">
   <div class="flex min-w-0 items-center gap-5 overflow-clip">
     <a href="/" class="shrink-0" aria-label="Peppermint home">
-      <img src="/peppermint-logo.svg" alt="Peppermint" class="h-10 w-auto" />
+      <img src="/peppermint-logo.svg" alt="Peppermint" class="header-wordmark header-wordmark--light h-10 w-auto" />
+      <img src={peppermintLogoDark.src} alt="Peppermint" class="header-wordmark header-wordmark--dark h-10 w-auto" />
     </a>
     <a href="/" class="whitespace-nowrap text-[15px] leading-[23px] font-medium text-(--app-primary) bg-(--app-primary-light) no-underline rounded-sm flex gap-0.5 justify-center items-center py-px pl-1.5 pr-1"><Sparkle stroke-width={1.6} fill="currentColor" class="w-2.5 h-2.5" /> Help</a>
   </div>
