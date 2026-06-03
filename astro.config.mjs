@@ -11,8 +11,10 @@ export default defineConfig({
 	integrations: [
 		starlight({
 			title: 'My Docs',
+			favicon: '/favicon.ico',
 			components: {
 				Header: './src/components/Header.astro',
+				MobileMenuFooter: './src/components/MobileMenuFooter.astro',
 			},
 			logo: {
 				light: '/src/assets/peppermint-logo.svg',
