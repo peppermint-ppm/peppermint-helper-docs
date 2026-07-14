@@ -59,7 +59,7 @@ Click **Next** to save and move to Screener. If Study Name, Session Duration, We
 
 #### Step 2 — Screener (optional)
 
-An info card reminds you this step is optional — skip it if your **Participants** targeting (Step 5) already narrows things down enough.
+Skip this step if your **Participants** targeting (Step 5) already narrows things down enough — screener questions are best used for behavioural filtering (habits, attitudes, past experience) rather than demographic filtering, which Participants targeting already handles.
 
 - Each question card has a **question type** (single-select, multi-select, short text, long text) and the question text itself.
 - For select-type questions, add answer options and mark any as "qualifying" so Peppermint can auto-flag whether a respondent qualified.
