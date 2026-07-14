@@ -22,7 +22,7 @@ Interviews let you recruit and schedule live 1:1 (or moderated) sessions with pa
 
 2. If this is your first time here, you'll see a setup checklist instead of a study list. Both steps must be checked off before you can create anything:
 
-   - **Connect Google Calendar** — click **Connect**. This opens Google's standard OAuth consent screen; sign in and grant Peppermint permission to read/write calendar events. Once connected, this item turns green and Peppermint now knows which calendar to check for conflicts and where to place booked sessions.
+   - **Connect Calendar** — click **Connect** and choose Google or Microsoft. This opens that provider's standard OAuth consent screen; sign in and grant Peppermint permission to read/write calendar events. Once connected, this item turns green and Peppermint now knows which calendar to check for conflicts and where to place booked sessions.
    - **Set your availability** — click **Set**. A dialog opens with a timezone dropdown (defaults to your browser's detected timezone) and a weekly schedule editor — one row per day (Mon–Sun), each with a checkbox to enable/disable that day. Enabled days default to 9:00 AM–5:00 PM; adjust the start/end time per block, and use the **+** button next to a row to add more than one time block per day (e.g. 9–12 and 1–5, for a lunch gap). The dialog shows a running total — "X days · Y hrs/week" — so you can sanity-check your availability at a glance. Click **Save availability** to confirm; the checkbox for this step turns green.
 
    ![The setup checklist dialog showing Connect calendar and Set availability steps](../../../assets/docs/interviews/step-1-setup-checklist.png)
@@ -35,7 +35,7 @@ You only have to do this once. Every interview study you create afterward reuses
 
 1. Click **Create** (top-left of the Interviews list). A dialog opens asking for:
    - **Study Name** — required, internal only; participants never see it.
-   - **Location** — Google Calendar or Microsoft Calendar (Microsoft is currently disabled/grayed out; Google is the only working option).
+   - **Location** — Google Calendar or Microsoft Calendar depending on what calendar you have connected.
 
 2. Click **Create** in that dialog. A new draft study is created immediately, and you're dropped into the first step of the wizard, with your study name carried into the breadcrumb at the top.
 
@@ -59,20 +59,21 @@ Click **Next** to save and move to Screener. If Study Name, Session Duration, We
 
 #### Step 2 — Screener (optional)
 
-An info card reminds you this step is optional — skip it if your **Participants** targeting (Step 5) already narrows things down enough.
+Skip this step if your **Participants** targeting (Step 5) already narrows things down enough — screener questions are best used for behavioural filtering (habits, attitudes, past experience) rather than demographic filtering, which Participants targeting already handles.
 
-- Each question card has a **question type** (single-select, multi-select, short text, long text) and the question text itself.
-- For select-type questions, add answer options and mark any as "qualifying" so Peppermint can auto-flag whether a respondent qualified.
-- Drag the handle on a card to reorder it; click the trash icon to remove it.
-- Click **+ Add question** to add another.
+- Click **+ Add question** to add as many screener questions as you need.
+- Choose a **question type** — single-select or multi-select — then type in the question and its answer options.
+- Mark the qualifying option(s): single-select questions take one qualifying answer, multi-select questions can have several, so Peppermint can auto-flag whether a respondent qualified.
+- Drag the handle on a card to reorder it, or click the trash icon to delete it.
 
 Nothing here is required — **Next** is never blocked by this step. If you never add a real question, screening is simply skipped for this study.
 
 #### Step 3 — Team
 
-- A table lists everyone on the study: you (**Main host**, locked — can't be changed or removed), plus anyone else you add.
-- Each row has a **Role** dropdown (Main host / Observer) and a **Calendar** dropdown showing which of that person's connected calendars sessions will be added to (or "Not connected" if they haven't linked one).
-- Click **Add team** to open a picker of everyone in your workspace — check the people you want, then click **Add team** in that dialog to confirm. They're added as Observers by default; change their role afterward in the table.
+You (the study creator) are always the **Main host** — locked, and can't be changed or removed. Adding a team member sends a calendar invite for each session so they can join the calls with you; if an Observer hasn't connected their calendar, they won't be invited to sessions.
+
+- Click **Add team** to open a picker of everyone in your workspace — check the people you want, then click **Add team** in that dialog to confirm. They're added as **Observers** by default; change their role afterward in the table.
+- Each row also shows a **Calendar** dropdown — which of that person's connected calendars sessions will be added to, or "Not connected" if they haven't linked one.
 - Click the trash icon on a row to remove someone.
 
 Click **Next** to move on — nothing here blocks progress either.
@@ -185,7 +186,7 @@ The Recap panel has three sections:
 ## Key Actions
 
 - **Create** — Start a new interview study (unlocks only after calendar connection + availability setup is complete).
-- **Connect** — Link your Google Calendar so Peppermint can check conflicts and place booked sessions.
+- **Connect** — Link your Google or Microsoft Calendar so Peppermint can check conflicts and place booked sessions.
 - **Set availability** — Define your recurring weekly working hours for scheduling.
 - **Add team** — Add teammates as Main host or Observer, each with their own connected calendar.
 - **Publish** — Make a study live so matched participants can book sessions.
@@ -216,10 +217,10 @@ See also: [Panels](/features/panels)
 ## FAQs & Common Issues
 
 **Q: Why is the Create button grayed out on the Interviews page?**
-A: You haven't finished the one-time setup yet. Both **Connect Google Calendar** and **Set your availability** must be checked off (green) before **Create** unlocks.
+A: You haven't finished the one-time setup yet. Both **Connect Calendar** and **Set your availability** must be checked off (green) before **Create** unlocks.
 
 **Q: Can I use Microsoft Calendar instead of Google?**
-A: Not yet — Microsoft Calendar appears as an option but is currently disabled. Google Calendar is the only working option.
+A: Yes — during setup, click **Connect** and choose whichever calendar provider you use. Which calendar a study books to depends on the calendar you've connected.
 
 **Q: Do I need to add screener questions?**
 A: No. The Screener step is optional and never blocks progress. If your Participants targeting criteria already narrows the pool enough, you can skip it entirely.
