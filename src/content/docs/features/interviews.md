@@ -61,10 +61,10 @@ Click **Next** to save and move to Screener. If Study Name, Session Duration, We
 
 Skip this step if your **Participants** targeting (Step 5) already narrows things down enough — screener questions are best used for behavioural filtering (habits, attitudes, past experience) rather than demographic filtering, which Participants targeting already handles.
 
-- Each question card has a **question type** (single-select, multi-select, short text, long text) and the question text itself.
-- For select-type questions, add answer options and mark any as "qualifying" so Peppermint can auto-flag whether a respondent qualified.
-- Drag the handle on a card to reorder it; click the trash icon to remove it.
-- Click **+ Add question** to add another.
+- Click **+ Add question** to add as many screener questions as you need.
+- Choose a **question type** — single-select or multi-select — then type in the question and its answer options.
+- Mark the qualifying option(s): single-select questions take one qualifying answer, multi-select questions can have several, so Peppermint can auto-flag whether a respondent qualified.
+- Drag the handle on a card to reorder it, or click the trash icon to delete it.
 
 Nothing here is required — **Next** is never blocked by this step. If you never add a real question, screening is simply skipped for this study.
 
