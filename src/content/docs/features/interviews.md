@@ -70,9 +70,9 @@ Nothing here is required — **Next** is never blocked by this step. If you neve
 
 #### Step 3 — Team
 
-- **Main host** — the study creator (you), locked and can't be changed or removed.
+You (the study creator) are always the **Main host** — locked, and can't be changed or removed. Adding a team member sends a calendar invite for each session so they can join the calls with you; if an Observer hasn't connected their calendar, they won't be invited to sessions.
+
 - Click **Add team** to open a picker of everyone in your workspace — check the people you want, then click **Add team** in that dialog to confirm. They're added as **Observers** by default; change their role afterward in the table.
-- Adding a team member sends a calendar invite for each session so they can join the calls with you. If an Observer hasn't connected their calendar, they won't be invited to sessions.
 - Each row also shows a **Calendar** dropdown — which of that person's connected calendars sessions will be added to, or "Not connected" if they haven't linked one.
 - Click the trash icon on a row to remove someone.
 
