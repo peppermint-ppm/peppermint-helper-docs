@@ -22,7 +22,7 @@ Interviews let you recruit and schedule live 1:1 (or moderated) sessions with pa
 
 2. If this is your first time here, you'll see a setup checklist instead of a study list. Both steps must be checked off before you can create anything:
 
-   - **Connect Google Calendar** — click **Connect**. This opens Google's standard OAuth consent screen; sign in and grant Peppermint permission to read/write calendar events. Once connected, this item turns green and Peppermint now knows which calendar to check for conflicts and where to place booked sessions.
+   - **Connect Calendar** — click **Connect** and choose Google or Microsoft. This opens that provider's standard OAuth consent screen; sign in and grant Peppermint permission to read/write calendar events. Once connected, this item turns green and Peppermint now knows which calendar to check for conflicts and where to place booked sessions.
    - **Set your availability** — click **Set**. A dialog opens with a timezone dropdown (defaults to your browser's detected timezone) and a weekly schedule editor — one row per day (Mon–Sun), each with a checkbox to enable/disable that day. Enabled days default to 9:00 AM–5:00 PM; adjust the start/end time per block, and use the **+** button next to a row to add more than one time block per day (e.g. 9–12 and 1–5, for a lunch gap). The dialog shows a running total — "X days · Y hrs/week" — so you can sanity-check your availability at a glance. Click **Save availability** to confirm; the checkbox for this step turns green.
 
    ![The setup checklist dialog showing Connect calendar and Set availability steps](../../../assets/docs/interviews/step-1-setup-checklist.png)
@@ -35,7 +35,7 @@ You only have to do this once. Every interview study you create afterward reuses
 
 1. Click **Create** (top-left of the Interviews list). A dialog opens asking for:
    - **Study Name** — required, internal only; participants never see it.
-   - **Location** — Google Calendar or Microsoft Calendar (Microsoft is currently disabled/grayed out; Google is the only working option).
+   - **Location** — Google Calendar or Microsoft Calendar depending on what calendar you have connected.
 
 2. Click **Create** in that dialog. A new draft study is created immediately, and you're dropped into the first step of the wizard, with your study name carried into the breadcrumb at the top.
 
@@ -185,7 +185,7 @@ The Recap panel has three sections:
 ## Key Actions
 
 - **Create** — Start a new interview study (unlocks only after calendar connection + availability setup is complete).
-- **Connect** — Link your Google Calendar so Peppermint can check conflicts and place booked sessions.
+- **Connect** — Link your Google or Microsoft Calendar so Peppermint can check conflicts and place booked sessions.
 - **Set availability** — Define your recurring weekly working hours for scheduling.
 - **Add team** — Add teammates as Main host or Observer, each with their own connected calendar.
 - **Publish** — Make a study live so matched participants can book sessions.
@@ -216,10 +216,10 @@ See also: [Panels](/features/panels)
 ## FAQs & Common Issues
 
 **Q: Why is the Create button grayed out on the Interviews page?**
-A: You haven't finished the one-time setup yet. Both **Connect Google Calendar** and **Set your availability** must be checked off (green) before **Create** unlocks.
+A: You haven't finished the one-time setup yet. Both **Connect Calendar** and **Set your availability** must be checked off (green) before **Create** unlocks.
 
 **Q: Can I use Microsoft Calendar instead of Google?**
-A: Not yet — Microsoft Calendar appears as an option but is currently disabled. Google Calendar is the only working option.
+A: Yes — during setup, click **Connect** and choose whichever calendar provider you use. Which calendar a study books to depends on the calendar you've connected.
 
 **Q: Do I need to add screener questions?**
 A: No. The Screener step is optional and never blocks progress. If your Participants targeting criteria already narrows the pool enough, you can skip it entirely.
